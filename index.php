@@ -12,8 +12,10 @@
         <?php
         ?>
     </header>
-        <?php include("./parts-template/register.php");?>
-        <?php include("./parts-template/login.php");?>
+        <?php include("./connect.php");
+              include("./parts-template/register.php");
+             // include("./parts-template/login.php");
+             ?>
     <script src="script.js"></script>
 </body>
 </html>
