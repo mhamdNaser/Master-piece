@@ -1,4 +1,5 @@
-<!DOCTYPE html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,12 @@
     <title>Golden House</title>
 </head>
 <body>
-    <?php include("./parts-template/header.php"); ?>
-    <?php include("./connect.php");
-             // include("./parts-template/login.php");
-             ?>
-    <script src="script.js"></script>
+    <header>
+        <?php require_once("parts-template/header.php") ?>
+    </header>
+    <main>
+        <?php  require_once("config.php")?>
+    </main>
+    <script src="./Js/script.js"></script>
 </body>
 </html>
