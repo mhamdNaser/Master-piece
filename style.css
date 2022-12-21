@@ -36,15 +36,29 @@ a:hover{color: #181D31;background-color: #E6DDC4;}
 
 .icon{
     padding: 6px 6px !important;
+    background-image: url("./image/user.png");
 }
 .icon:hover{background-color: rgba(255, 255, 255, 0.0) !important ;}
 
 main{
-    height: 1000px;
-    margin-right: -8px;
-    margin-left: -8px;
-    background-image: url("./image/land-back.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: aliceblue;
+    padding: 5%;
+}
+
+form{
+    margin: 0 auto;
+    width: 20%;
+}
+
+input{
+    height: 2.2em;
+    width: 100%;
+    display: block;
+    margin: 10px auto;
+    border: 3px solid lightgrey;
+    border-radius: 3px;
+    padding: 0.4em;
+}
+input:last-of-type{
+    width: 10em;
 }

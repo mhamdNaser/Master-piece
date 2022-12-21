@@ -1,3 +1,6 @@
+<?php
+    //  this is home page
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +16,12 @@
         <?php require_once("parts-template/header.php") ?>
     </header>
     <main>
-        <?php  require_once("config.php")?>
+        <section>
+            <?php  
+                require_once("config.php");  
+                require_once("./parts-template/register.php")
+            ?>
+        </section>
     </main>
     <script src="./Js/script.js"></script>
 </body>
