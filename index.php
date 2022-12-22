@@ -18,7 +18,6 @@
     <main>
         <section>
             <?php  
-                require_once("config.php");  
                 require_once("./parts-template/register.php")
             ?>
         </section>
