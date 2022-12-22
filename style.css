@@ -50,7 +50,7 @@ form{
     width: 20%;
 }
 
-input{
+input,select{
     height: 2.2em;
     width: 100%;
     display: block;
