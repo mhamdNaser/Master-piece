@@ -1,7 +1,7 @@
 <?php
 
 $hostName = "localhost";
-$DBname = "users1";
+$DBname = "users";
 $DBuser = "root";
 $UserPassword = "";
 

@@ -6,17 +6,22 @@
 try
     {
         // Taking all 5 values from the form data(input)
+        $type = $_REQUEST['type'];
         $fi_name = $_REQUEST['first_name'];
         $la_name = $_REQUEST['last_name'];
         $pass = $_REQUEST['password'];
         $email = $_REQUEST['email'];
 
-        // insert value in database
-        $sql = "INSERT INTO student (id, fname, lname, password, email) VALUES ('', '$fi_name', '$la_name', '$pass', '$email')";
-        $connect_db->exec($sql);
-
-        // message the insert is done
-        echo "<h3>data stored in a database successfully.</h3>";
+        // insert value in special database
+        if ($type == "Partner"){
+            $sql = "INSERT INTO partners (id, fname, lname, password, email) VALUES ('', '$fi_name', '$la_name', '$pass', '$email')";
+            $connect_db->exec($sql);
+        }
+        if($type == "Student"){
+            $sql = "INSERT INTO students (id, fname, lname, password, email) VALUES ('', '$fi_name', '$la_name', '$pass', '$email')";
+            $connect_db->exec($sql);
+        }
+        
     }
     catch(PDOException $e){
             echo "ERROR: Hush! Sorry. " ;

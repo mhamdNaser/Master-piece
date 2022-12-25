@@ -16,11 +16,15 @@
         <?php require_once("parts-template/header.php") ?>
     </header>
     <main>
-        <section>
-            <?php  
-                require_once("./parts-template/register.php")
-            ?>
-        </section>
+        <?php  
+            include("./parts-template/register.php");
+        ?>
+        <br>
+        <hr>
+        <br>
+        <?php  
+            include("./parts-template/login.php");
+        ?>
     </main>
     <script src="./Js/script.js"></script>
 </body>
