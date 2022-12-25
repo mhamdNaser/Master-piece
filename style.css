@@ -1,5 +1,5 @@
 *{
-    font-size: 14px;
+    font-size: 16px;
     box-sizing: border-box;
 }
 
@@ -24,6 +24,7 @@ ul{
 li{
     display: inline-block;
 }
+
 button{
     background-color: rgba(255, 255, 255, 0.0);
     border: none;
@@ -37,6 +38,7 @@ button:hover{color: #181D31;background-color: #E6DDC4;}
     color: white;
     text-decoration: none;
 }
+
 
 .icon{
     padding: 6px 6px !important;
@@ -82,4 +84,8 @@ input,select{
     border-radius: 3px;
     padding: 2% 5%;
     margin-top: 1%;
+}
+
+#login{
+    padding-top: 15% !important;
 }

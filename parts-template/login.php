@@ -7,9 +7,6 @@
     </div>
     <div>
         <form id="login" action="./db/getdata.php" method="post" >
-            <div style="background-color: #181D31;">
-                <img src="./image/user1.png" alt="" width="80px"><br>
-            </div>
             <label for="">E-mail</label>
             <input type="email" name="email" value="" placeholder="E-mail">
             <label for="">Password</label>
