@@ -24,8 +24,12 @@ ul{
 li{
     display: inline-block;
 }
+button{
+    background-color: rgba(255, 255, 255, 0.0);
+    border: none;
+}
 
-a:hover{color: #181D31;background-color: #E6DDC4;}
+button:hover{color: #181D31;background-color: #E6DDC4;}
 
 .list{
     padding: 20px 20px;
@@ -40,22 +44,42 @@ a:hover{color: #181D31;background-color: #E6DDC4;}
 }
 .icon:hover{background-color: rgba(255, 255, 255, 0.0) !important ;}
 
+#registeration,#loginSection{ 
+    display: none;
+}
+
 main{
-    background-color: aliceblue;
     padding: 5%;
 }
 
 form{
-    margin: 0 auto;
-    width: 20%;
+    margin-top: 10%;
+    height: 520px;
+    padding: 4%;
+    border-left: 5px solid #181D31;
+    float: left;
+    width: 60%;
+}
+
+label{
+    margin-left: 3px;
+    font-size: 18px;
 }
 
 input,select{
-    height: 2.2em;
+    height: 2.8em;
     width: 100%;
     display: block;
     margin: 10px auto;
     border: 3px solid lightgrey;
     border-radius: 3px;
-    padding: 0.4em;
+    padding: 0.5em;
+}
+
+.submit{
+    background-color: #181D31;
+    color: white;
+    border-radius: 3px;
+    padding: 2% 5%;
+    margin-top: 1%;
 }

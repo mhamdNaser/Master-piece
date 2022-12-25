@@ -19,9 +19,6 @@
         <?php  
             include("./parts-template/register.php");
         ?>
-        <br>
-        <hr>
-        <br>
         <?php  
             include("./parts-template/login.php");
         ?>

@@ -2,14 +2,15 @@
   // this is header
 
 ?>
-<nav>
-  <ul>
-    <li><a class="list" href="#">HOME</a></li>
-    <li><a class="list" href="#">ABOUT</a></li>
-    <li><a class="list" href="#">CONTACT</a></li>
-    <li><a class="list" href="#">SEVICE</a></li>
-    <li style="float: right;"><a class="icon list" href="#" onclick=""><img src="./image/user.png" alt="" width="40px"></a></li>
-    <li style="float: right;"><a class="list" href="#">REGISTER</a></li>
-    <li style="float: right;"><a class="list" href="#">LOGIN</a></li>
-  </ul>
-</nav>
+  <nav>
+    <ul>
+      <li><button class="list" href="#">HOME</button></li>
+      <li><button class="list" href="#">ABOUT</button></li>
+      <li><button class="list" href="#">CONTACT</button></li>
+      <li><button class="list" href="#">SEVICE</button></li>
+      <li style="float: right;"><button class="icon list"><img src="./image/user.png" alt="" width="40px"></button></li>
+      <li style="float: right;"><button class="list" onclick="showrregis()">REGISTER</button></li>
+      <li style="float: right;"><button class="list" onclick="showrlogin()">LOGIN</button></li>
+    </ul>
+  </nav>
+
