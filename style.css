@@ -60,18 +60,19 @@ form{
     padding: 4%;
     border-left: 5px solid #181D31;
     float: left;
-    width: 60%;
+    width: 80%;
 }
 
 label{
     margin-left: 3px;
     font-size: 18px;
+    display: block !important;
 }
 
 input,select{
     height: 2.8em;
-    width: 100%;
-    display: block;
+    width: 80%;
+    display: inline-block;
     margin: 10px auto;
     border: 3px solid lightgrey;
     border-radius: 3px;
@@ -96,5 +97,15 @@ input,select{
     margin-left: 3px;
     font-size: 12px;
     color: red;
+    display: none;
+}
+
+.line{
+    float: right;
+    width: 18%;
+    margin-top: 25px; 
+}
+
+#smallpass, #goodpass, #bestpass, #notmatch, #match{
     display: none;
 }
