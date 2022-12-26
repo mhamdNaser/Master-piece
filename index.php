@@ -20,6 +20,7 @@
             include("./parts-template/register.php");
         ?>
         <?php  
+            require_once("./db/config.php");
             include("./parts-template/login.php");
         ?>
     </main>

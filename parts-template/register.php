@@ -6,7 +6,7 @@
         <img src="./image/register.png" alt="" width="100%">
     </div>
     <div>
-        <form id="register" action="./db/insert.php" method="post" >
+        <form id="register" action="" method="post" >
             <label for="">Official Status</label>
             <br>
             <select name="type">
@@ -16,13 +16,15 @@
             </select>
             <br>
             <label for="">First Name</label>
-            <input type="text" name="first_name" value="" placeholder="First Name">
+            <input type="text" id="fname" name="first_name" value="" placeholder="First Name">
             <label for="">Last Name</label>
-            <input type="text" name="last_name" value="" placeholder="Last Name">
+            <input type="text" id="lname" name="last_name" value="" placeholder="Last Name">
             <label for="">Password</label>
-            <input type="text" name="password" value="" placeholder="Password">
+            <input type="password" name="password" value="" placeholder="Password">
+            <label for="">Repeat Password</label>
+            <input type="password" name="conf-password" value="" placeholder="Repeat Password">
             <label for="">E-mail</label>
-            <input type="email" name="email" value="" placeholder="E-mail">
+            <input type="email" id="email" name="email" value="" placeholder="E-mail">
             <button class="submit" type="submit" >Regiser</button>
         </form>
     </div>
