@@ -11,17 +11,57 @@ showrlogin = () => {
     document.getElementById("registeration").style.display = 'none'
 }
 
-
 let pattern = "^[a-zA-Z]+$"
-let inputValue = document.getElementById('fname').value
-let resultReg = inputValue.match(pattern)
+let fname = document.getElementById("fname")
+let lname = document.getElementById("lname")
+let pass = document.getElementById("password")
 
-if (match(pattern, string)){
-    print("The string contains only letters.")
+
+checkfname = () => {
+
+    if (fname.value.match(pattern)){
+        lname.removeAttribute('disabled')
+        document.getElementById("fnerror").style.display = "none"
+    }
+    else{
+        document.getElementById("fnerror").innerHTML = "Please use letters only" 
+        document.getElementById("fnerror").style.display = "block"
+    }
 }
-else{
-    print("The string contains other characters.")
+
+checklname = () => {
+    if(fname.value === ""){
+        document.getElementById("lnerror").innerHTML = "insert first name"
+    }
+    else{
+        if (lname.value.match(pattern)){
+            pass.removeAttribute('disabled')
+            document.getElementById("lnerror").style.display = "none"
+        }
+        else{
+            document.getElementById("lnerror").innerHTML = "Please use letters only" 
+            document.getElementById("lnerror").style.display = "block"
+        }
+    }
 }
+
+checkpass = () => {
+    if(fname.value === ""){
+        document.getElementById("lnerror").innerHTML = "insert first name"
+    }
+    else{
+        if (lname.value.match(pattern)){
+            pass.removeAttribute('disabled')
+            document.getElementById("lnerror").style.display = "none"
+        }
+        else{
+            document.getElementById("lnerror").innerHTML = "Please use letters only" 
+            document.getElementById("lnerror").style.display = "block"
+        }
+    }
+}
+
+
 
 
 // const mysql = require('./db/config.php')
