@@ -10,7 +10,7 @@
             <label for="">E-mail</label>
             <input type="email" name="email" value="" placeholder="E-mail">
             <label for="">Password</label>
-            <input type="text" name="password" value="" placeholder="Password">
+            <input type="text" name="password" value="" placeholder="Password"><br>
             <button class="submit" type="submit" >login</button>
         </form>
     </div>

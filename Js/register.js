@@ -1,17 +1,4 @@
-function showrregis () {
-    document.getElementById("registeration").style.display = 'grid'
-    document.getElementById("registeration").style.gridTemplateColumns = '50% 50%'
-    document.getElementById("loginSection").style.display = 'none'
-    
-}
-
-showrlogin = () => {
-    document.getElementById("loginSection").style.display = 'grid'
-    document.getElementById("loginSection").style.gridTemplateColumns = '50% 50%'
-    document.getElementById("registeration").style.display = 'none'
-}
-
-let pattern = "^[a-zA-Z]+$"
+let pattern = "^[a-zA-Z ]*$"
 let regPass = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])([a-zA-Z0-9@$!%*?&]{12,32}$)"
 let regPass1 = "^(?=.*[0-9])(?=.*[a-z])([a-zA-Z0-9]{8,12})"
 let regPass2 = "^(?=.*[a-z])([a-zA-Z0-9]{8})"
@@ -29,7 +16,7 @@ checkfname = () => {
         document.getElementById("fnerror").style.display = "none"
     }
     else{
-        document.getElementById("fnerror").innerHTML = "Please use letters only" 
+        document.getElementById("fnerror").innerHTML = "Please Use Letters Only" 
         document.getElementById("fnerror").style.display = "block"
     }
 }
@@ -40,7 +27,7 @@ checklname = () => {
         document.getElementById("lnerror").style.display = "none"
     }
     else{
-        document.getElementById("lnerror").innerHTML = "Please use letters only" 
+        document.getElementById("lnerror").innerHTML = "Please Use Letters Only" 
         document.getElementById("lnerror").style.display = "block"
     }
 }
@@ -62,6 +49,8 @@ checkpass = () => {
         document.getElementById("smallpass").style.display = "flex"
         document.getElementById("bestpass").style.display = "none"
         document.getElementById("goodpass").style.display = "none"
+        document.getElementById("passerror").innerHTML = "Your Password Is Poor"
+        document.getElementById("passerror").style.display = "block"
     }
 }
 
@@ -76,49 +65,3 @@ recheckpass = () => {
         document.getElementById("match").style.display = "none"
     }
 }
-
-
-
-
-
-// const mysql = require('./db/config.php')
-// // Search for a value in the database
-// const queryString = `SELECT * FROM table_name WHERE column_name = '${searchValue}'`;
-// connection.query(queryString, (error, results) => {
-//     if (error) {
-//         throw error;
-//     }
-
-//     // Check if the value was found in the database
-//     if (results.length > 0) {
-//         console.log(`Value '${searchValue}' found in database`);
-//     } else {
-//         console.log(`Value '${searchValue}' not found in database`);
-//     }
-// });
-
-// // Close the connection
-// connection.end();
-
-
-// const mysql = require('mysql');
-
-// const connection = mysql.createConnection({
-//   host: 'localhost',
-//   user: 'myuser',
-//   password: 'mypassword',
-//   database: 'mydatabase'
-// });
-
-// connection.connect();
-
-// const input = 'some input';
-// const sql = `INSERT INTO table (column) VALUES (?)`;
-// const params = [input];
-
-// connection.query(sql, params, (error, results, fields) => {
-//   if (error) throw error;
-//   console.log('Input saved to database');
-// });
-
-// connection.end();

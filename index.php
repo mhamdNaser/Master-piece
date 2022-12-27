@@ -25,7 +25,6 @@
             include("./parts-template/login.php");
         ?>
     </main>
-    <script src="./Js/script.js"></script>
-    inpu
+    <script src="./Js/index.js"></script>
 </body>
 </html>
