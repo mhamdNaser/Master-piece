@@ -25,13 +25,14 @@ let pattern = "^[a-zA-Z ]*$"
 let regPass = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@$!%*?&])([a-zA-Z0-9@$!%*?&]{12,32}$)"
 let regPass1 = "^(?=.*[0-9])(?=.*[a-z])([a-zA-Z0-9]{8,12})"
 let regPass2 = "^(?=.*[a-z])([a-zA-Z0-9]{8})"
-let regmail = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$20 nu"
+let regmail = "^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
 
 let fname = document.getElementById("fname")
 let lname = document.getElementById("lname")
 let pass = document.getElementById("password")
 let repass = document.getElementById("conf-password")
 let mail =  document.getElementById("email")
+let btnsubmit = document.getElementById("submit")
 
 
 checkfname = () => {
@@ -98,7 +99,6 @@ recheckpass = () => {
 
 checkemail = () => {
     if (mail.value.match(regmail)){
-        mail.removeAttribute('disabled')
     }
     else{
         

@@ -22,14 +22,7 @@
             <p class="errormessage" id="lnerror"></p>
             <label for="">Password</label>
             <input type="password" id="password" name="password" value="" placeholder="Password" onchange="checkpass()" disabled>
-            <div class="progress line">
-                <div id="smallpass" class="progress-bar progress-bar-striped progress-bar-animated" style="width:30%">
-                </div>
-                <div id="goodpass" class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%">
-                </div>
-                <div id="bestpass" class="progress-bar progress-bar-striped progress-bar-animated" style="width:100%">
-                </div>
-            </div>
+            <i class="material-icons truth">done</i>
             <p class="errormessage" id="passerror"></p>
             <label for="">Repeat Password</label>
             <input type="password" id="conf-password" name="conf-password" value="" placeholder="Repeat Password" onchange="recheckpass()" disabled>
@@ -43,7 +36,7 @@
             <label for="">E-mail</label>
             <input type="email" id="email" name="email" value="" placeholder="E-mail" onchange="checkemail()" disabled>
             <p class="errormessage" id="mailerror"></p><br>
-            <button class="submit" type="submit"  disabled>Regiser</button>
+            <button id="submit" class="submit" type="submit">Regiser</button>
         </form>
     </div>
 </section>
