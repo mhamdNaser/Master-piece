@@ -25,6 +25,6 @@
             include("./parts-template/login.php");
         ?>
     </main>
-    <script src="./Js/index.js"></script>
+    <script src="./Js/script.js"></script>
 </body>
 </html>

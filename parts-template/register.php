@@ -3,7 +3,7 @@
 ?>
 <section id="registeration">
     <div>
-        <img src="./image/register.png" alt="" width="100%">
+        <img src="./image/register.png" alt="" width="90%">
     </div>
     <div>
         <form id="register" action="" method="post" >
@@ -22,7 +22,7 @@
             <p class="errormessage" id="lnerror"></p>
             <label for="">Password</label>
             <input type="password" id="password" name="password" value="" placeholder="Password" onchange="checkpass()" disabled>
-            <div class="progress bg-white line">
+            <div class="progress line">
                 <div id="smallpass" class="progress-bar progress-bar-striped progress-bar-animated" style="width:30%">
                 </div>
                 <div id="goodpass" class="progress-bar progress-bar-striped progress-bar-animated" style="width:60%">
@@ -39,10 +39,11 @@
                 <div id="notmatch" class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:100%">
                 </div>
             </div>
+            <p class="errormessage" id="repasserror"></p>
             <label for="">E-mail</label>
-            <input type="email" id="email" name="email" value="" placeholder="E-mail" disabled><br>
+            <input type="email" id="email" name="email" value="" placeholder="E-mail" onchange="checkemail()" disabled>
+            <p class="errormessage" id="mailerror"></p><br>
             <button class="submit" type="submit"  disabled>Regiser</button>
         </form>
     </div>
 </section>
-<script src="./Js/register.js"></script>

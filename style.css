@@ -1,48 +1,119 @@
-*{
-    font-size: 14px;
-    box-sizing: border-box;
+* {
+  font-size: 14px;
+  box-sizing: border-box;
 }
 
 /* ---------- THE HEADER && MAIN STYLE ---------- */
-header{ top: 0px; left: 0px; width: 100%; position: fixed; background-color: #181D31;}
-nav{ width: 100%; margin: 0 auto;}
-ul{ margin: 0; overflow: hidden;} 
-li{ display: inline-block;}
-.list{ padding: 20px 20px; display: block; color: white; text-decoration: none;}
+header {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  position: fixed;
+  background-color: #181d31;
+}
+nav {
+  width: 100%;
+  margin: 0 auto;
+}
+ul {
+  margin: 0;
+  overflow: hidden;
+}
+li {
+  display: inline-block;
+}
+.list {
+  padding: 20px 20px;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
 
-header button{ background-color: rgba(255, 255, 255, 0.0); border: none;}
-header button:hover{color: #181D31;background-color: rgb(230, 221, 196);}
-header button:first-of-type:hover{color: #181D31;background-color: rgba(230, 221, 196);}
+header button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+header button:hover {
+  color: #181d31;
+  background-color: rgb(230, 221, 196);
+}
+header button:first-of-type:hover {
+  color: #181d31;
+  background-color: rgba(230, 221, 196);
+}
 
-#registeration,#loginSection{ display: none;}
-main{ padding: 5%;}
+#registeration,
+#loginSection {
+  display: none;
+}
+main {
+  padding: 5%;
+}
 
 /* ---------- THE FORMS STYLE ---------- */
-img{ margin-top: 6%;}
-form{ margin-top: 6%; height: 640px; padding: 4%; border-left: 5px solid #181D31; float: left; width: 80%;}
-label{ margin-left: 3px; font-size: 18px; display: block !important;}
-input,select{ height: 2.8em; width: 80%; display: inline-block; margin: 10px auto; border: 3px solid lightgrey; border-radius: 3px; padding: 0.5em;}
-.submit{ background-color: #181D31; color: white; border-radius: 3px; padding: 2% 5%; margin-top: 1%;}
-
-#login{ margin-top: 20%  !important; padding-top: 8% !important; height: 340px !important;}
-
-.errormessage{ margin-left: 3px; font-size: 12px; color: red; display: none;
+img {
+  margin-top: 6%;
+}
+form {
+  margin-top: 6%;
+  height: 640px;
+  padding: 4%;
+  border-left: 5px solid #181d31;
+  float: left;
+  width: 100%;
+}
+label {
+  margin-left: 3px;
+  font-size: 18px;
+  display: block !important;
+}
+input,
+select {
+  height: 2.8em;
+  width: 80%;
+  display: inline-block;
+  margin: 10px auto;
+  border: 3px solid lightgrey;
+  border-radius: 3px;
+  padding: 0.5em;
+}
+.submit {
+  background-color: #181d31;
+  color: white;
+  border-radius: 3px;
+  padding: 2% 5%;
+  margin-top: 1%;
 }
 
-.line{
-    float: right;
-    position: relative;
-    width: 10%;
-    margin-right: 20%;
-    margin-top: 25px; 
-    opacity: 0.6 !important;
+#login {
+  margin-top: 20% !important;
+  padding-top: 8% !important;
+  height: 340px !important;
 }
 
-#smallpass, #goodpass, #bestpass, #notmatch, #match{
-    display: none;
-    opacity: 1 !important;
+.errormessage {
+  margin-left: 3px;
+  font-size: 12px;
+  color: red;
+  display: none;
 }
 
-#showpass{
-    float: right;
+.line {
+  float: right;
+  width: 10%;
+  margin-top: 25px;
+  opacity: 0.6 !important;
+}
+
+#smallpass,
+#goodpass,
+#bestpass,
+#notmatch,
+#match {
+  display: none;
+  opacity: 1 !important;
+}
+
+#showpass {
+  float: right;
 }
