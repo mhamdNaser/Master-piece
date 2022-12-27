@@ -16,5 +16,6 @@
         <?php  require_once("config.php")?>
     </main>
     <script src="./Js/script.js"></script>
+    inpu
 </body>
 </html>
