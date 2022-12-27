@@ -1,5 +1,5 @@
 *{
-    font-size: 14px;
+    font-size: 16px;
     box-sizing: border-box;
 }
 
@@ -25,7 +25,12 @@ li{
     display: inline-block;
 }
 
-a:hover{color: #181D31;background-color: #E6DDC4;}
+button{
+    background-color: rgba(255, 255, 255, 0.0);
+    border: none;
+}
+
+button:hover{color: #181D31;background-color: #E6DDC4;}
 
 .list{
     padding: 20px 20px;
@@ -34,17 +39,73 @@ a:hover{color: #181D31;background-color: #E6DDC4;}
     text-decoration: none;
 }
 
+
 .icon{
     padding: 6px 6px !important;
+    background-image: url("./image/user.png");
 }
 .icon:hover{background-color: rgba(255, 255, 255, 0.0) !important ;}
 
+#registeration,#loginSection{ 
+    display: none;
+}
+
 main{
-    height: 1000px;
-    margin-right: -8px;
-    margin-left: -8px;
-    background-image: url("./image/land-back.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    padding: 5%;
+}
+
+form{
+    margin-top: 6%;
+    height: 680px;
+    padding: 4%;
+    border-left: 5px solid #181D31;
+    float: left;
+    width: 80%;
+}
+
+label{
+    margin-left: 3px;
+    font-size: 18px;
+    display: block !important;
+}
+
+input,select{
+    height: 2.8em;
+    width: 80%;
+    display: inline-block;
+    margin: 10px auto;
+    border: 3px solid lightgrey;
+    border-radius: 3px;
+    padding: 0.5em;
+}
+
+.submit{
+    background-color: #181D31;
+    color: white;
+    border-radius: 3px;
+    padding: 2% 5%;
+    margin-top: 1%;
+}
+
+#login{
+    margin-top: 20%  !important;
+    padding-top: 8% !important;
+    height: 340px !important; 
+}
+
+.errormessage{
+    margin-left: 3px;
+    font-size: 12px;
+    color: red;
+    display: none;
+}
+
+.line{
+    float: right;
+    width: 18%;
+    margin-top: 25px; 
+}
+
+#smallpass, #goodpass, #bestpass, #notmatch, #match{
+    display: none;
 }
