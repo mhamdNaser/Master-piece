@@ -1,12 +1,14 @@
 <?php
 
-    require_once("./config.php");
+    require_once("config.php");
 
-    $type = $_REQUEST['type'];
-    $fi_name = $_REQUEST['first_name'];
-    $la_name = $_REQUEST['last_name'];
-    $pass = $_REQUEST['password'];
-    $email = $_REQUEST['email'];
+if ($_SERVER["REQUEST_METHOD"] == 'POST') {
+
+    $type = $_POST['type'];
+    $fi_name = $_POST['first_name'];
+    $la_name = $_POST['last_name'];
+    $pass = $_POST['password'];
+    $email = $_POST['email'];
 
     if ($type == "Partner"){
 
@@ -33,9 +35,13 @@
         }
 
     }
+    else{
+        echo "sure your input";
+    }
 
     $connect_db->close();
-    echo("<a href='../index.php'>HOME</a>");
+
+}
 
 // PDO CODE ------------------------------------------------
 

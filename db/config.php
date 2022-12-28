@@ -11,6 +11,9 @@ $connect_db = new mysqli($hostName,$DBuser,$UserPassword,$DBname);
 if ($connect_db->connect_error) {
     die("Connection failed: " . $connect_db->connect_error);
 }
+else{
+    echo "data is connect";
+}
 
 // PDO CODE ------------------------------------------------
 
