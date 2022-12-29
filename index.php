@@ -13,22 +13,9 @@
     <title>Golden House</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a class="list"><img src="./image/logo1.png" alt="" width="16px"></a></li>
-                <li><a class="list">HOME</a></li>
-                <li><a class="list">ABOUT</a></li>
-                <li><a class="list">CONTACT</a></li>
-                <li><a class="list">SEVICE</a></li>
-                <li style="float: right;"><a class="list"><img src="./image/user.png" alt="" width="16px"></a></li>
-                <li style="float: right;"><a id="btn-regist" class="list" href="register.php">REGISTER</a></li>
-                <li style="float: right;"><a id="btn-login" class="list" href="login.php" >LOGIN</a></li>
-            </ul>
-        </nav>
-    </header>
+    <?php include('header.php'); ?>
     <main>
-        
+       <h1> hello php page </h1>
     </main>
     <script src="./Js/script.js"></script>
 </body>

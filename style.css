@@ -42,18 +42,19 @@ header button:first-of-type:hover {
   background-color: rgba(230, 221, 196);
 }
 
-#registeration,
-#loginSection {
-  display: none;
-}
 main {
   padding: 5%;
 }
 
-/* ---------- THE FORMS STYLE ---------- */
-img {
-  margin-top: 6%;
+section{
+  display: grid;
+  grid-template-columns: 50% auto;
 }
+
+/* ---------- THE FORMS STYLE ---------- */
+/* img {
+  margin-top: 6%;
+} */
 form {
   margin-top: 6%;
   height: 640px;
