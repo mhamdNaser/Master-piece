@@ -1,46 +1,11 @@
+@import url(./css/header.css);
+
 * {
   font-size: 14px;
   box-sizing: border-box;
 }
 
-/* ---------- THE HEADER && MAIN STYLE ---------- */
-header {
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  position: fixed;
-  background-color: #181d31;
-}
-nav {
-  width: 100%;
-  margin: 0 auto;
-}
-ul {
-  margin: 0;
-  overflow: hidden;
-}
-li {
-  display: inline-block;
-}
-.list {
-  padding: 20px 20px;
-  display: block;
-  color: white;
-  text-decoration: none;
-}
 
-header button {
-  background-color: rgba(255, 255, 255, 0);
-  border: none;
-}
-header button:hover {
-  color: #181d31;
-  background-color: rgb(230, 221, 196);
-}
-header button:first-of-type:hover {
-  color: #181d31;
-  background-color: rgba(230, 221, 196);
-}
 
 main {
   padding: 5%;
@@ -48,7 +13,7 @@ main {
 
 section{
   display: grid;
-  grid-template-columns: 50% auto;
+  grid-template-columns: 50% 50%;
 }
 
 /* ---------- THE FORMS STYLE ---------- */

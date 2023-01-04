@@ -14,7 +14,7 @@
     <title>Golden House</title>
 </head>
 <body>
-    <?php include('header.php'); ?>
+    <?php include('component/header.php'); ?>
     <main>
     <section>
         <div>

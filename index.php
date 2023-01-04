@@ -13,7 +13,7 @@
     <title>Golden House</title>
 </head>
 <body>
-    <?php include('header.php'); ?>
+    <?php include('component/header.php'); ?>
     <main>
        <h1> hello php page </h1>
     </main>
