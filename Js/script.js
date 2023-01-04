@@ -11,6 +11,10 @@ let repass = document.getElementById("conf-password")
 let mail =  document.getElementById("email")
 let btnsubmit = document.getElementById("submit")
 
+showlist = () => {
+    document.getElementById("dropdownlist").style.display = "block !important"
+}
+
 function logSubmit(event) {
     if( fname.value == ""){
         document.getElementById("fnerror").innerHTML = "Please insert first name" 
@@ -149,3 +153,5 @@ checkemail = () => {
 // });
 
 // connection.end();
+
+

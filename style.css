@@ -11,15 +11,21 @@ main {
   padding: 5%;
 }
 
-section{
-  display: grid;
-  grid-template-columns: 50% 50%;
-}
-
 /* ---------- THE FORMS STYLE ---------- */
 /* img {
   margin-top: 6%;
 } */
+
+.formcontainer{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.formimage{
+  width: auto;
+}
+
+
 form {
   margin-top: 6%;
   height: 640px;
@@ -28,11 +34,13 @@ form {
   float: left;
   width: 100%;
 }
+
 label {
   margin-left: 3px;
   font-size: 18px;
   display: block !important;
 }
+
 input,
 select {
   height: 2.8em;
@@ -81,4 +89,37 @@ select {
 
 #showpass {
   float: right;
+}
+
+
+
+@media screen and (max-width: 860px){
+
+  .list{
+    display: none;
+  }
+
+  .formcontainer{
+    display: grid;
+    grid-template-columns: 100%;
+  }
+
+  form {
+    margin: 6% auto;
+    padding: 4%;
+    border-left: none;
+    border-top: 5px solid #181d31;
+    width: 100%;
+  }
+  
+  .formimage{
+    width: 100%;
+  }
+
+  input,
+  select {
+    width: 100%;
+    margin: 10px auto;
+  }
+
 }

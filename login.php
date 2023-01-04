@@ -15,8 +15,8 @@
 <body>
     <?php include('component/header.php'); ?>
     <main>
-    <section>
-        <div>
+    <section class="formcontainer">
+        <div class="formimage">
             <img src="./image/login.png" alt="" width="100%">
         </div>
         <div>

@@ -1,38 +1,66 @@
 /* ---------- THE HEADER && MAIN STYLE ---------- */
 header {
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    position: fixed;
-    background-color: #181d31;
+    background-color: #181d31 !important;
   }
-  nav {
+  .mynav {
     width: 100%;
     margin: 0 auto;
   }
-  ul {
+  .mynav ul {
     margin: 0;
     overflow: hidden;
   }
-  li {
+  .mynav li {
     display: inline-block;
   }
+
   .list {
     padding: 20px 20px;
     display: block;
     color: white;
     text-decoration: none;
-  }
-  
-  header button {
     background-color: rgba(255, 255, 255, 0);
     border: none;
   }
-  header button:hover {
+
+  .mobile-list{
+    display: none;
+  }
+
+  .list1{
+    display: none;
+  }
+  
+  .list:hover {
     color: #181d31;
     background-color: rgb(230, 221, 196);
+    text-decoration: none;
   }
-  header button:first-of-type:hover {
-    color: #181d31;
-    background-color: rgba(230, 221, 196);
+
+
+  @media screen and (max-width: 860px){
+
+    .list{
+      display: none;
+    }
+
+    .mynav li {
+      display: block;
+      text-align: center;
+    }
+
+    .mobile-list{
+      display: block;
+    }
+    #dropdownlist{
+      display: none;
+    }
+
+    .list1 {
+      padding: 20px 20px;
+      display: block;
+      color: white;
+      text-decoration: none;
+    }
+  
   }
