@@ -3,7 +3,6 @@ header {
     background-color: #181d31 !important;
   }
   .mynav {
-    width: 100%;
     margin: 0 auto;
   }
   .mynav ul {
@@ -11,13 +10,12 @@ header {
     overflow: hidden;
   }
   .mynav li {
-    display: inline-block;
+    display: inline-block ;
   }
 
   .list {
-    padding: 20px 20px;
     display: block;
-    color: white;
+    color: white !important;
     text-decoration: none;
     background-color: rgba(255, 255, 255, 0);
     border: none;
@@ -26,11 +24,11 @@ header {
   .mobile-list{
     display: none;
   }
-
+/* 
   .list1{
     display: none;
   }
-  
+   */
   .list:hover {
     color: #181d31;
     background-color: rgb(230, 221, 196);
@@ -52,9 +50,8 @@ header {
     .mobile-list{
       display: block;
     }
-    #dropdownlist{
-      display: none;
-    }
+
+    
 
     .list1 {
       padding: 20px 20px;
