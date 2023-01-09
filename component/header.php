@@ -28,15 +28,15 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="nav navbar-nav">
-                <li><a  href="index.php">HOME</a></li>
-                <li><a>ABOUT</a></li>
-                <li><a>CONTACT</a></li>
-                <li><a>SEVICE</a></li>
+                <li><a class="list"  href="index.php">HOME</a></li>
+                <li><a class="list" >ABOUT</a></li>
+                <li><a class="list" >CONTACT</a></li>
+                <li><a class="list" >SEVICE</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a class="list" href="./dashboard/index.html"><span class="fa fa-user-circle-o" style="font-size:18px"></span></a></li>
                 <li><a href="register.php" class="list" >Sign Up</a></li>
                 <li><a href="login.php" class="list" >Login</a></li>
+                <li><a class="list" href="./dashboard.php"><span class="fa fa-user-circle-o" style="font-size:18px"></span></a></li>
             </ul>
                 <!-- <div class="mobile-list">
                     <div id="dropdownlist">
